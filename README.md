@@ -18,10 +18,9 @@ from_id| Station id for the "from" station
 to| Station the train is arriving to for the stop in the current row
 to_id| Station id for the "to" station. 
 scheduled_time| the scheduled departure time out of the "to" stop
-actual_time|If "departed", then actual departure time out of the "to" stop. 
-           |If "cancelled", the time at which this stop was cancelled. 
-           | If "estimated", the estimated departure time out of the "to" stop.
-
-delay_minutes| The difference between actual_time and scheduled_time, in minutes.
-Status| Can take the values "departed", "cancelled", or "estimated". 
-line| The train line on NJ Transit or Amtrak.
+actual_time| If "departed", then actual departure time out of the "to" stop
+actual_time| If "cancelled", the time at which this stop was cancelled 
+           | If "estimated", the estimated departure time out of the "to" stop
+delay_minutes| The difference between actual_time and scheduled_time, in minutes
+Status| Can take the values "departed", "cancelled", or "estimated"
+line| The train line on NJ Transit or Amtrak
