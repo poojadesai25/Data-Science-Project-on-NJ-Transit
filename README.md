@@ -7,25 +7,18 @@ The data is of 9 years and contains information about both NJ Transit and Amtrak
 The data includes stop-level, minute resolution data on 287,000+ train trips (248,000+ NJ Transit trips, 38,000+ Amtrak trips). But we are strictly focusing on NJ Transit trips. The data is released by the government.
 
 Column names include:
-date:           Date of operation according to the 27-hour NJ Transit schedule.
-
-train_id:       These are unique on a daily and correspond to the same scheduled train.                       
-
-stop_sequence:  Scheduled stop number for the stop in the row.
-
-from:           Station the train is traveling from for the stop in the current row.
-
-from_id:        Station id for the "from" station. 
-
-to:             Station the train is arriving to for the stop in the current row.
-
-to_id:          Station id for the "to" station. 
-
-scheduled_time: the scheduled departure time out of the "to" stop. 
-
-actual_time:    If "departed", then actual departure time out of the "to" stop. 
-                If "cancelled", the time at which this stop was cancelled. 
-                If "estimated", the estimated departure time out of the "to" stop.
+Column Name| Description
+Date| Date of operation according to the 27-hour NJ Transit schedule
+train_id| These are unique on a daily and correspond to the same scheduled train                      
+stop_sequence| Scheduled stop number for the stop in the row
+from| Station the train is traveling from for the stop in the current row
+from_id| Station id for the "from" station
+to| Station the train is arriving to for the stop in the current row
+to_id| Station id for the "to" station. 
+scheduled_time| the scheduled departure time out of the "to" stop
+actual_time|If "departed", then actual departure time out of the "to" stop. 
+            If "cancelled", the time at which this stop was cancelled. 
+            If "estimated", the estimated departure time out of the "to" stop.
 
 delay_minutes:  The difference between actual_time and scheduled_time, in minutes.
 
